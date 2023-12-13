@@ -15,7 +15,7 @@
                   <div class="card-body">
                     <h5 class="card-title">{{ titles[(i + j) % titles.length].title }}</h5>
                     <p class="card-text">{{ titles[(i + j) % titles.length].notes }}</p>
-                    <p class="card-price">Price: {{ titles[(i + j) % titles.length].price }}</p>
+                    <p class="card-price">Price: {{ titles[(i + j) % titles.length].price | currency:'INR'}}</p>
                   </div>
                 </div>
               </div>

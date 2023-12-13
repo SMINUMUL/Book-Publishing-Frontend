@@ -8,7 +8,7 @@
           <div class="card-body">
             <h5 class="card-title">{{ title.title }}</h5>
             <p class="card-text">{{ title.notes }}</p>
-            <p class="card-price">Price: {{ title.price }}</p>
+            <p class="card-price">Price: {{ title.price | currency:'INR'}}</p>
           </div>
         </div>
       </div>
