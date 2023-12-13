@@ -1,3 +1,4 @@
+<app-carousel></app-carousel>
 <div class="container">
   <div class="row">
     <div *ngFor="let title of titles" class="col-3 text-align-left mt-5">
@@ -7,7 +8,7 @@
           <div class="card-body">
             <h5 class="card-title">{{ title.title }}</h5>
             <p class="card-text">{{ title.notes }}</p>
-            <p class="card-title text-primary">Price: {{ title.price }}</p>
+            <p class="card-price">Price: {{ title.price | currency:'INR'}}</p>
           </div>
         </div>
       </div>

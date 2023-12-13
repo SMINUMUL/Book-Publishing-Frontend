@@ -14,4 +14,12 @@ export class TitleService {
   getTitles(): Observable<TitleModel[]> {
     return this.http.get<TitleModel[]>(`${this.apiUrl}/titles`);
   }
+
+  getTop5Titles(): Observable<TitleModel[]> {
+    return this.http.get<TitleModel[]>(`${this.apiUrl}/titles/top5titles`);
+  }
+
+  getTop5ExpensiveTitles(): Observable<TitleModel[]> {
+    return this.http.get<TitleModel[]>(`${this.apiUrl}/titles/top5ExpensiveTitles`);
+  }
 }
