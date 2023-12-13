@@ -1,8 +1,18 @@
-.card {
+/* Custom styles for Bootstrap 5 Carousel */
+#cardCarousel {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.card-carousel {
   transform: scale(1);
-  transition: transform 0.3s ease; /* Adding transition for smooth scaling */
-  width: 200px;
-  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  width: 18rem;
+  margin: 0 auto;
   border: 2px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
@@ -10,21 +20,25 @@
   background-color: #e5e5e5;
 }
 
-.card:hover {
-  transform: scale(1.05); /* Scaling effect on hover */
+.card-carousel:hover {
+  transform: scale(1.05);
 }
 
-.card img {
+.card-carousel img {
   width: 100%;
   height: auto;
   border-bottom: 1px solid #ccc;
 }
 
-.card-body {
+.card-carousel .card-content {
+  overflow: hidden;
+}
+
+.card-carousel .card-body {
   padding: 15px;
 }
 
-.card-title {
+.card-carousel .card-title {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
@@ -32,7 +46,7 @@
   text-align: center;
 }
 
-.card-price {
+.card-carousel .card-price {
   width: 100px;
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -45,14 +59,14 @@
   background-color: #ecf0f1;
 }
 
-.card-text {
+.card-carousel .card-text {
   text-align: center;
   font-size: 15px;
   height: 66px;
   overflow: hidden;
 }
 
-.btn {
+.card-carousel .btn {
   display: block;
   width: 100%;
   padding: 10px;
@@ -64,6 +78,6 @@
   transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.card-carousel .btn:hover {
   background-color: #085c80;
 }
